@@ -1,7 +1,7 @@
 #include "pxt.h"
 
 using namespace pxt;
-namespace gamerbit {
+namespace gamebit {
     bool initialized = false;
 
     //%
