@@ -3,13 +3,13 @@
  */
 //%
 enum GameBitPin {
-    //% block="P12 (C)"
+    //% block="Button-C"
     P12 = <number>DAL.MICROBIT_ID_IO_P12,
-    //% block="P13 (D)"
+    //% block="Button-D"
     P13 = DAL.MICROBIT_ID_IO_P13,
-    //% block="P14 (E)"
+    //% block="Button-E"
     P14 = DAL.MICROBIT_ID_IO_P14,
-    //% block="P15 (F)"
+    //% block="Button-F"
     P15 = DAL.MICROBIT_ID_IO_P15,
 }
 
