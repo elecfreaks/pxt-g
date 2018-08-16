@@ -1,23 +1,23 @@
 /**
- * The pins used by SparkFun gamer:bit
+ * The pins used by ELECFREAKS game:bit
  */
 //%
-enum GamerBitPin {
-    //% block="P12 (D-PAD up)"
+enum GameBitPin {
+    //% block="P12 (C)"
     P12 = <number>DAL.MICROBIT_ID_IO_P12,
-    //% block="P12 (D-PAD left)"
+    //% block="P13 (D)"
     P13 = DAL.MICROBIT_ID_IO_P13,
-    //% block="P14 (D-PAD right)"
+    //% block="P14 (E)"
     P14 = DAL.MICROBIT_ID_IO_P14,
-    //% block="P15 (D-PAD down)"
+    //% block="P15 (F)"
     P15 = DAL.MICROBIT_ID_IO_P15,
 }
 
 /**
- * The event raised by the SparkFun gamer:bit pins
+ * The event raised by the ELECFREAKS game:bit pins
  */
 //%
-enum GamerBitEvent {
+enum GameBitEvent {
     //% block="down"
     Down = DAL.MICROBIT_BUTTON_EVT_DOWN,
     //% block="up"
@@ -27,14 +27,14 @@ enum GamerBitEvent {
 }
 
 /**
- * Functions to operate the SparkFun gamer:bit
+ * Functions to operate the ELECFREAKS game:bit
  */
-//% color=#f44242 icon="\uf11b"
-namespace gamerbit {
+//% color=#0fbc11 icon="\uf11b"
+namespace gamebit {
 	/**
 	 * 
 	 */
-    //% shim=gamerbit::init
+    //% shim=gamebit::init
     function init(): void {
         return;
     }
@@ -44,22 +44,22 @@ namespace gamerbit {
 	 * @param button the pin that acts as a button
 	 */
     //% weight=89
-    //% blockId=gamerbit_ispressed block="gamer:bit %button|is pressed"
+    //% blockId=gamebit_ispressed block="game:bit %button|is pressed"
     //% button.fieldEditor="gridpicker" button.fieldOptions.columns=3
-    export function isPressed(button: GamerBitPin): boolean {
+    export function isPressed(button: GameBitPin): boolean {
         const pin = <DigitalPin><number>button;
         pins.setPull(pin, PinPullMode.PullUp);
         return pins.digitalReadPin(<DigitalPin><number>button) == 0;
     }
 
 	/**
-	 * Registers code to run when a gamer:bit event is detected.
+	 * Registers code to run when a game:bit event is detected.
 	 */
     //% weight=90
-    //% blockId=gamerbit_onevent block="gamer:bit on %button|%event"
+    //% blockId=gamebit_onevent block="game:bit on %button|%event"
     //% button.fieldEditor="gridpicker" button.fieldOptions.columns=3
     //% event.fieldEditor="gridpicker" event.fieldOptions.columns=3
-    export function onEvent(button: GamerBitPin, event: GamerBitEvent, handler: Action) {
+    export function onEvent(button: GameBitPin, event: GameBitEvent, handler: Action) {
         init();
         control.onEvent(<number>button, <number>event, handler); // register handler
     }
