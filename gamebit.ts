@@ -44,7 +44,7 @@ namespace gamebit {
 	 * @param button the pin that acts as a button
 	 */
     //% weight=89
-    //% blockId=gamebit_ispressed block="game:bit %button|is pressed"
+    //% blockId=gamebit_ispressed block="on %button|is pressed"
     //% button.fieldEditor="gridpicker" button.fieldOptions.columns=3
     export function isPressed(button: GameBitPin): boolean {
         const pin = <DigitalPin><number>button;
@@ -56,7 +56,7 @@ namespace gamebit {
 	 * Registers code to run when a game:bit event is detected.
 	 */
     //% weight=90
-    //% blockId=gamebit_onevent block="game:bit on %button|%event"
+    //% blockId=gamebit_onevent block="on event %button| %event"
     //% button.fieldEditor="gridpicker" button.fieldOptions.columns=3
     //% event.fieldEditor="gridpicker" event.fieldOptions.columns=3
     export function onEvent(button: GameBitPin, event: GameBitEvent, handler: Action) {
