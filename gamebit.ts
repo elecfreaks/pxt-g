@@ -1,5 +1,5 @@
 /**
- * The pins used by ELECFREAKS game:bit
+ * The pins used by ELECFREAKS gamebit
  */
 //%
 enum GameBitPin {
@@ -14,7 +14,7 @@ enum GameBitPin {
 }
 
 /**
- * The event raised by the ELECFREAKS game:bit pins
+ * The event raised by the ELECFREAKS gamebit pins
  */
 //%
 enum GameBitEvent {
@@ -27,7 +27,7 @@ enum GameBitEvent {
 }
 
 /**
- * Functions to operate the ELECFREAKS game:bit
+ * Functions to operate the ELECFREAKS gamebit
  */
 //% color=#0fbc11 icon="\uf11b"
 namespace gamebit {
