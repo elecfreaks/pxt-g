@@ -29,7 +29,7 @@ enum GameBitEvent {
 /**
  * Functions to operate the ELECFREAKS gamebit
  */
-//% color=#0fbc11 icon="\uf11b"
+//% color=#0fbc11 icon="\uf4c2"
 namespace gamebit {
 	/**
 	 * 
