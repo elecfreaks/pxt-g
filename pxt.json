@@ -1,7 +1,7 @@
 {
     "name": "Gamebit",
     "version": "0.0.10",
-    "description": "ELECFREAKS gamebit blocks",
+    "description": "ELECFREAKS game:bit blocks",
     "license": "MIT",
     "dependencies": {
         "core": "*"
