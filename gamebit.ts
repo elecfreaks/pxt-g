@@ -56,7 +56,7 @@ namespace gamebit {
 	 * Registers code to run when a game:bit event is detected.
 	 */
     //% weight=90
-    //% blockId=gamebit_onevent block="on button %button|%event"
+    //% blockId=gamebit_onevent block="on button %button| %event"
     //% button.fieldEditor="gridpicker" button.fieldOptions.columns=3
     //% event.fieldEditor="gridpicker" event.fieldOptions.columns=3
     export function onEvent(button: GameBitPin, event: GameBitEvent, handler: Action) {
